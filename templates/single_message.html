@@ -1,0 +1,20 @@
+<div id="opened_message">
+	<div class="opened_message_part" id="subject">
+		<p>Temat:</p>
+		<p>{{ msg_subject }}</p>
+	</div>
+	<div class="opened_message_part" id="from">
+	<p>Nadawca:</p>
+        <p>{{ msg_from }}</p>
+	</div>
+	<div class="opened_message_part" id="to">
+	        <p>Odbiorca:</p>
+	        <p>{{ msg_to }}</p>
+	</div>
+	<div class="opened_message_part" id="content">
+	        <p>{{ msg_content }}</p>
+	</div>
+	<div class="opened_message_part_delete" id="delete" name="{{ id }}">
+		<p>Usuń</p>
+	</div>
+</div>

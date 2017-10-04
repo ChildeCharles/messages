@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title> Mailbox </title>
+	<meta name="description" content="MailBox">
+	<meta name ="keywords" content="main, message, mailbox">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='basic.css') }}">
+	<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}" ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1> Witaj użytkowniku: {{ username }} </h1>
+	<div class = "option_panel" id="option_panel">
+		<ul>
+		<li class="option_panel_inside" id="new_message">Utworz nowa wiadomosc</li>
+		<li class="option_panel_inside" id="inbox">Otworz skrzynke odbiorcza</li>
+	        <li class="option_panel_inside" id="outbox">Otworz skrzynke nadawcza</li>
+	        <li class="option_panel_inside" id="logout">Wyloguj sie</li>
+		</ul>
+	</div>
+	<div class = "dynamic_panel" id="dynamic_panel">
+		<p>{{ message }}</p>
+	</div>
+</body>
+</html>

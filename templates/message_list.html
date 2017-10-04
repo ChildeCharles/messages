@@ -1,0 +1,15 @@
+<div id="message_list">
+		{% for n in range( actors|length ) %}
+		<div id="single_message" class="single_message">
+				{% if msg_type == "inbox" %}
+				<div id="msg_type" class="message_part_inactive">Od: {{ actors[n] }}</div>
+				{% endif  %}
+				{% if msg_type == "outbox" %}
+                                <div id="msg_type" class="message_part_inactive">Do: {{ actors[n] }}</div>
+                                {% endif  %}
+				<div id="subject" name="{{ ids[n] }}" class="message_part">Temat: {{ subjects[n] }}</div>
+				<div id="read" name="{{ ids[n] }}" class="message_part">{% if unread[n] == True %} Nieprzeczytano {% elif unread[n] == False %} Przeczytano {% else %} {% endif %}</div>
+				<div id="delete" name="{{ ids[n] }}" class="message_part">Usuń</div>
+		</div>
+		{% endfor %}
+</div>

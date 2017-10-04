@@ -1,0 +1,71 @@
+body 
+{	
+	position:relative;
+	margin: 5%;
+	max-width:100%;
+	line-height:1.6;
+	font-size:18px;
+	color:#444;
+	background-color:bisque;
+}
+.option_panel
+{
+	width: 30%;
+	float: left;
+	border: thick double blue;
+}
+.dynamic_panel
+{
+	width: 60%;
+	float: left;
+        border: thick double red;
+}
+.single_message
+{
+	border-style: solid;
+    	border-width: 3px;
+	border-color: red;
+}
+.message_part, .message_part_inactive
+{
+        border-style: solid;
+        border-width: 1px;
+        border-color: red;
+
+}
+.opened_message_part
+{
+        border-style: solid;
+        border-width: 1px;
+        border-color: red;
+
+}
+.option_panel_inside
+{
+	
+}
+.message_part:hover, .option_panel_inside:hover, .opened_message_part_delete:hover
+{
+	background-color: chocolate;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
